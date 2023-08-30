@@ -5,40 +5,67 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="WE'RE SO BACK">
-<meta http-equiv="refresh" content="2;url=https://unoptimal.github.io/its-so-over">
+<meta http-equiv="refresh" content="1;url=https://unoptimal.github.io/its-so-over">
 <title>WE'RE SO BACK</title>
 <style>
-       html, body {
+    html, body {
         margin: 0;
         padding: 0;
         height: 100%;
         font-family: Arial, sans-serif;
-        color: black;
-        background: white;
+        color: white;
+        background: black;
     }
-    body {
+    #wrapper {
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+    }
+    .credit, .credit2 {
+        position: fixed;
+        bottom: 10px;
+        font-size: 2vh;
     }
     .credit {
-        position: fixed;
-        bottom: 10px;
         left: 10px;
-        font-size: 15px;
     }
     .credit2 {
-        position: fixed;
-        bottom: 10px;
         right: 10px;
-        font-size: 15px;
     }
     h1{
-        font-size: 50px;
+        font-size: 25vh;
     }
     a{
         text-decoration: none;
-        color: black;
+        color: white;
+    }
+
+    @media (max-width: 1025px) {
+        h1 {
+            font-size: 15vh;
+        }
+        .credit, .credit2 {
+            font-size: 1.5vh;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 8vh;
+        }
+        .credit, .credit2 {
+            font-size: 1.5vh;
+        }
+    }
+    @media (max-width: 426px) {
+        h1 {
+            font-size: 5vh;
+        }
+        .credit, .credit2 {
+            font-size: 1.5vh;
+        }
     }
 </style>
 </head>
